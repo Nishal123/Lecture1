@@ -4,7 +4,8 @@
 <textarea matInput rows="6"[value]="newpost" 
 #postInput></textarea>
 </mat-form-field>
+<button mat-raised-button color = "Primary" (click)="(onAddPost(postInput))"> Save post</button>
 </mat-card>
 <hr>
-<button (click)="(onAddPost(postInput))"> Save post</button>
+
 <p>{{newpost}}</p>      
