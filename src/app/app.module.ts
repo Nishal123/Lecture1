@@ -7,8 +7,10 @@ import { AppComponent } from './app.component';
 
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 
+import { MatInputModule, MatCardModule } from '@angular/material';
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule , MatInputModule,MatCardModule],
   declarations: [ AppComponent, PostCreateComponent ],
   bootstrap:    [ AppComponent ]
 })

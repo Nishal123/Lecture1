@@ -1,0 +1,10 @@
+<h2>The post create app</h2>
+<mat-card>
+<mat-form-field>
+<textarea matInput rows="6"[value]="newpost" 
+#postInput></textarea>
+</mat-form-field>
+</mat-card>
+<hr>
+<button (click)="(onAddPost(postInput))"> Save post</button>
+<p>{{newpost}}</p>      
